@@ -1,6 +1,7 @@
 (ns leiningen.exampleplug
   (:require [leiningen.install :as install]
-            [leiningen.core.main :as lmain]))
+            [leiningen.core.main :as lmain]
+            [robert.hooke :as hooke]))
 
 (defn- once
   [project]
