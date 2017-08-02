@@ -5,4 +5,6 @@
   :pedantic? :abort
 
   :dependencies
-  [[org.clojure/clojure "1.8.0"]])
+  [[org.clojure/clojure "1.8.0"]]
+
+  :plugins [[lein-monolith "1.0.1" :exclusions [org.clojure/clojure]]])

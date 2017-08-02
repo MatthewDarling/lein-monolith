@@ -9,6 +9,8 @@
    [example/lib-b "0.2.0"]
    [org.clojure/clojure "1.8.0"]]
 
+  :plugins [[lein-monolith "1.0.1"]]
+
   :profiles
   {:shared {:source-paths [~(System/getenv "CONFIG_JAR_PATH")]}
    :dev [:shared
