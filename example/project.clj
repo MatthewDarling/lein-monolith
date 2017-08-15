@@ -8,10 +8,6 @@
   :dependencies
   [[org.clojure/clojure "1.8.0"]]
 
-  :profiles
-  {:provided
-   {:plugins [[test2junit "1.2.5"]]}}
-
   :test-selectors
   {:unit (complement :integration)
    :integration :integration}
@@ -23,8 +19,7 @@
 
    :inherit-leaky
    [:repositories
-    :managed-dependencies
-    :profiles]
+    :managed-dependencies]
 
    :project-selectors
    {:deployable :deployable
