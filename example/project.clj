@@ -2,11 +2,15 @@
   :description "Overarching example project."
 
   :plugins
-  [[lein-monolith "1.0.2-SNAPSHOT"]
+  [[lein-monolith "1.0.1"]
    [lein-cprint "1.2.0"]]
 
   :dependencies
   [[org.clojure/clojure "1.8.0"]]
+
+  :profiles
+  {:provided
+   {:plugins [[test2junit "1.2.5"]]}}
 
   :test-selectors
   {:unit (complement :integration)
@@ -19,7 +23,8 @@
 
    :inherit-leaky
    [:repositories
-    :managed-dependencies]
+    :managed-dependencies
+    :profiles]
 
    :project-selectors
    {:deployable :deployable
